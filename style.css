@@ -1,4 +1,6 @@
-/* remove thic comment to add @import font or CSS variables at the top of this file */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+
 * {
   box-sizing: border-box;
 }
@@ -43,3 +45,120 @@ header, footer {
 
 /* WRITE YOUR styling/typesetting CSS code BELOW HERE */
 
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    word-spacing: 0.06em;
+    color: #1d1c1c;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    letter-spacing: 0.08rem;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+section h2 + p {
+    text-indent: 1.25rem;
+}
+a:link {
+    color: #a66;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #a66;
+}
+
+a:hover, a:focus {
+    color: #a66;
+    text-decoration: none;
+    outline: none;
+    background-color: #e9e1e1;
+}
+
+a:active {
+    color: white;
+    background-color: rgb(104, 172, 134);
+}
+
+a[href^="http"]::after {
+    content: "";
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 0.3rem;
+    background: url("external-link-52.png") no-repeat center;
+    background-size: contain;
+}
+ul, ol {
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    padding-left: 3rem;
+}
+
+li {
+    line-height: 1.6;
+}
+
+section ul, aside ul {
+    list-style-type: square;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-bottom: 1.2rem;
+}
+
+nav a:link, nav a:visited {
+    display: block;
+    padding: 1.2rem 1rem;
+    border: 1px solid #a66;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #a66;
+    background-color: white;
+}
+
+nav a:hover, nav a:focus {
+    color: white;
+    background-color: #a66;
+    text-decoration: none;
+    box-shadow: 0 0 0 2px #e6c6c6;
+}
+
+nav a:active {
+    color: white;
+    background-color: #773333;
+}
